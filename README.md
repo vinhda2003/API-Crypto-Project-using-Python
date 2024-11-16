@@ -80,7 +80,9 @@ def api_runner():
 
 
 ## **Visualization**
+
 ### **Trending percentage_change of top 10 coin**
+
 ```
 df2 = pd.json_normalize(data['data'])
 df2['timestamp'] = pd.to_datetime('now')
@@ -102,6 +104,7 @@ import matplotlib.pyplot as plt
 sns.catplot(x='percent_change', y='values', hue='name', data=df7, kind='point')
 ```
 <img width="382" alt="image" src="https://github.com/user-attachments/assets/b1616fb0-fd93-4c38-ae02-9ce89f56392e">
+
 ### **Trending Bitcoin Price by Timestamp**
 
 ```
